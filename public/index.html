@@ -3,38 +3,50 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Text and Image Analyzer</title>
+    <title>QueryCraft - AI-Powered Question Generator</title>
     <link rel="stylesheet" href="style.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/tesseract.js/5.1.1/tesseract.min.js"></script>
 </head>
 <body>
     <header>
-        <h1>Text and Image Analyzer</h1>
-        <p>Upload a photo or write a paragraph to receive personalized questions based on the content.</p>
+        <div class="logo-container">
+            <img src="DALL·E 2024-11-19 16.10.44 - A professional and modern logo design for a website that generates questions from user-provided pages or text. The logo features a stylized question m.jpg" alt="QueryCraft Logo" id="logo">
+            <h1>QueryCraft</h1>
+        </div>
+        <p>Your AI assistant to extract and generate questions from text or images.</p>
     </header>
 
     <main>
-        <section class="input-section">
-            <div class="text-input">
-                <h2>Write a Paragraph:</h2>
-                <textarea id="user-text" placeholder="Write your text here..." rows="6"></textarea>
-            </div>
-            <div class="file-input">
-                <h2>Or Upload a Photo:</h2>
-                <input type="file" id="image-upload" accept="image/*">
-            </div>
-        </section>
+        <div class="content-wrapper">
+            <section class="choice-section">
+                <h2>Select Input Method</h2>
+                <div class="choice-buttons">
+                    <button id="text-option" class="choice-btn">Paste Text</button>
+                    <button id="image-option" class="choice-btn">Upload Image</button>
+                </div>
+            </section>
 
-        <section class="submit-section">
-            <img src="icons8-loading-24.png" alt="" id="loading-img">
-            <button id="submit-btn">Submit</button>
-        </section>
+            <section class="input-section">
+                <div class="text-input hidden" id="text-input-section">
+                    <h2>Write or Paste Your Text:</h2>
+                    <textarea id="user-text" placeholder="Write or paste your text here..." rows="6" ></textarea>
+                </div>
+                <div class="file-input hidden" id="file-input-section">
+                    <h2>Upload an Image:</h2>
+                    <input type="file" id="image-upload" accept="image/*">
+                </div>
+            </section>
+
+            <section class="submit-section">
+                <button id="submit-btn" class="animated-button">Generate Questions</button>
+                <img src="icons8-loading-24.png" alt="Loading" id="loading-img" class="hidden">
+            </section>
+        </div>
     </main>
 
     <footer>
-        <p>&copy; 2024 Text and Image Analyzer. All rights reserved.</p>
-        
+        <p>&copy; 2024 QueryCraft. All rights reserved.</p>
     </footer>
+
     <script src="script.js"></script>
 </body>
 </html>

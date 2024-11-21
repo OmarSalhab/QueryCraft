@@ -18,13 +18,6 @@ app.get("/", (req, res) => {
     res.sendFile(path.join(__dirname, "public/index.html"));
 });
 
-if (true) {
-	function greet() {
-		console.log('Hello!');
-	}
-}
-console.log(greet()); // ReferenceError: greet is not defined
-
 app.listen(port, () => {
 	console.log(`Server is running at http://localhost:${port}`);
 });
