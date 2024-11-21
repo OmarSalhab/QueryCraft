@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text and Image Analyzer</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tesseract.js/5.1.1/tesseract.min.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Text and Image Analyzer</h1>
+        <p>Upload a photo or write a paragraph to receive personalized questions based on the content.</p>
+    </header>
+
+    <main>
+        <section class="input-section">
+            <div class="text-input">
+                <h2>Write a Paragraph:</h2>
+                <textarea id="user-text" placeholder="Write your text here..." rows="6"></textarea>
+            </div>
+            <div class="file-input">
+                <h2>Or Upload a Photo:</h2>
+                <input type="file" id="image-upload" accept="image/*">
+            </div>
+        </section>
+
+        <section class="submit-section">
+            <img src="icons8-loading-24.png" alt="" id="loading-img">
+            <button id="submit-btn">Submit</button>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Text and Image Analyzer. All rights reserved.</p>
+        
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
