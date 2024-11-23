@@ -1,0 +1,139 @@
+/* General Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #333;
+    line-height: 1.6;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+header, footer {
+    background-color: #222;
+    color: #fff;
+}
+h1, h2, h3 {
+    color: #111;
+}
+section {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+}
+.logo {
+    display: flex;
+    align-items: center;
+}
+.logo img {
+    height: 40px;
+    margin-right: 10px;
+}
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+.nav-links li {
+    margin: 0 15px;
+}
+.nav-links a {
+    color: #fff;
+    font-weight: 700;
+}
+
+/* Hero Section */
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background: linear-gradient(to bottom right, #6a11cb, #2575fc);
+    color: #fff;
+    padding: 100px 30px;
+}
+.hero-content {
+    max-width: 600px;
+    text-align: left;
+}
+.hero-image {
+    max-width: 400px;
+}
+.cta-btn {
+    background: #ff9800;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+/* Features Section */
+.features {
+    background: #f9f9f9;
+}
+.features-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+.feature {
+    max-width: 300px;
+    text-align: center;
+}
+.feature img {
+    height: 80px;
+    margin-bottom: 15px;
+}
+
+/* How It Works Section */
+.steps {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+.step {
+    max-width: 250px;
+}
+.step img {
+    height: 70px;
+    margin-bottom: 15px;
+}
+
+/* Contact Section */
+.contact {
+    background: #222;
+    color: #fff;
+}
+.contact-form input, .contact-form textarea {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+}
+.contact-form button {
+    background: #ff9800;
+    border: none;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 15px 20px;
+}

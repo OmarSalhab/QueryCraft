@@ -28,9 +28,11 @@ document.getElementById("submit-btn").addEventListener("click", async () => {
 
         // Fetch the converted text from the server
         const data = await response.json();
-        alert(`Text converted from Tesseract: ${data.text}`);
+        document.getElementById('user-text-output').textContent = data.text
+        document.getElementById('text-input-output').classList.remove('hidden')
         document.getElementById("submit-btn").style.display ="block"
-        document.getElementById("loading-img").style.display ="none"
+        document.getElementById("loading-img").style.display = "none"
+        document.getElementById('file-input-section').style.display = 'none'
     } catch (error) {
         console.error(error);
         alert("An error occurred. Please try again.");

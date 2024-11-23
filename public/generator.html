@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QueryCraft - AI-Powered Question Generator</title>
+    <link rel="stylesheet" href="styles\generator.css">
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <img src="images\DALL·E 2024-11-19 16.10.44 - A professional and modern logo design for a website that generates questions from user-provided pages or text. The logo features a stylized question m.jpg" alt="QueryCraft Logo" id="logo">
+            <h1>QueryCraft</h1>
+        </div>
+        <p>Your AI assistant to extract and generate questions from text or images.</p>
+    </header>
+
+    <main>
+        <div class="content-wrapper">
+            <section class="choice-section">
+                <h2>Select Input Method</h2>
+                <div class="choice-buttons">
+                    <button id="text-option" class="choice-btn">Paste Text</button>
+                    <button id="image-option" class="choice-btn">Upload Image</button>
+                </div>
+            </section>
+
+            <section class="input-section">
+                <div class="text-input hidden" id="text-input-section">
+                    <h2>Write or Paste Your Text:</h2>
+                    <textarea id="user-text" placeholder="Write or paste your text here..." rows="6" ></textarea>
+                </div>
+                <div class="file-input hidden" id="file-input-section">
+                    <h2>Upload an Image:</h2>
+                    <input type="file" id="image-upload" accept="image/*">
+                </div>
+                <div class="text-input hidden" id="text-input-output">
+                    <h2>any modification on the result?</h2>
+                    <textarea id="user-text-output"></textarea>
+                </div>
+            </section>
+
+            <section class="submit-section">
+                <button id="submit-btn" class="animated-button">Generate Questions</button>
+                <img src="icons8-loading-24.png" alt="Loading" id="loading-img" class="hidden">
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 QueryCraft. All rights reserved.</p>
+    </footer>
+
+    <script src="scripts\script.js"></script>
+</body>
+</html>

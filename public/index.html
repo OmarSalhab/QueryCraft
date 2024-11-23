@@ -3,50 +3,96 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>QueryCraft - AI-Powered Question Generator</title>
-    <link rel="stylesheet" href="style.css">
+    <title>QueryCraft - Revolutionize Your Learning</title>
+    <link rel="stylesheet" href="styles\style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
+    <!-- Navbar -->
     <header>
-        <div class="logo-container">
-            <img src="DALL·E 2024-11-19 16.10.44 - A professional and modern logo design for a website that generates questions from user-provided pages or text. The logo features a stylized question m.jpg" alt="QueryCraft Logo" id="logo">
-            <h1>QueryCraft</h1>
-        </div>
-        <p>Your AI assistant to extract and generate questions from text or images.</p>
+        <nav class="navbar">
+            <div class="logo">
+                <img src="images/DALL·E 2024-11-19 16.10.44 - A professional and modern logo design for a website that generates questions from user-provided pages or text. The logo features a stylized question m.jpg" alt="QueryCraft Logo">
+                <span>QueryCraft</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#how-it-works">How It Works</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
     </header>
 
-    <main>
-        <div class="content-wrapper">
-            <section class="choice-section">
-                <h2>Select Input Method</h2>
-                <div class="choice-buttons">
-                    <button id="text-option" class="choice-btn">Paste Text</button>
-                    <button id="image-option" class="choice-btn">Upload Image</button>
-                </div>
-            </section>
-
-            <section class="input-section">
-                <div class="text-input hidden" id="text-input-section">
-                    <h2>Write or Paste Your Text:</h2>
-                    <textarea id="user-text" placeholder="Write or paste your text here..." rows="6" ></textarea>
-                </div>
-                <div class="file-input hidden" id="file-input-section">
-                    <h2>Upload an Image:</h2>
-                    <input type="file" id="image-upload" accept="image/*">
-                </div>
-            </section>
-
-            <section class="submit-section">
-                <button id="submit-btn" class="animated-button">Generate Questions</button>
-                <img src="icons8-loading-24.png" alt="Loading" id="loading-img" class="hidden">
-            </section>
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Unlock Your Potential with AI-Powered Questions</h1>
+            <p>Generate tailored questions from slides, images, or text to enhance your learning. Test yourself, sharpen your skills, and grow with QueryCraft.</p>
+            <a href="generator.html" class="cta-btn">Get Started</a>
         </div>
-    </main>
+        <img src="hero-image.jpg" alt="Learning with AI" class="hero-image">
+    </section>
 
+    <!-- Features Section -->
+    <section id="features" class="features">
+        <h2>Why Choose QueryCraft?</h2>
+        <div class="features-container">
+            <div class="feature">
+                <img src="feature1.png" alt="Feature 1">
+                <h3>Text-Based Questions</h3>
+                <p>Paste any text, and QueryCraft generates questions to test your understanding instantly.</p>
+            </div>
+            <div class="feature">
+                <img src="feature2.png" alt="Feature 2">
+                <h3>Image Recognition</h3>
+                <p>Upload slides or images, and let AI extract key insights and create questions.</p>
+            </div>
+            <div class="feature">
+                <img src="feature3.png" alt="Feature 3">
+                <h3>AI-Driven Accuracy</h3>
+                <p>Enjoy precise and adaptive question generation powered by cutting-edge AI.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works Section -->
+    <section id="how-it-works" class="how-it-works">
+        <h2>How It Works</h2>
+        <div class="steps">
+            <div class="step">
+                <img src="step1.png" alt="Step 1">
+                <h3>1. Choose Your Input</h3>
+                <p>Paste text, upload slides, or provide an image.</p>
+            </div>
+            <div class="step">
+                <img src="step2.png" alt="Step 2">
+                <h3>2. Let AI Analyze</h3>
+                <p>Our advanced algorithms process the input to generate insightful questions.</p>
+            </div>
+            <div class="step">
+                <img src="step3.png" alt="Step 3">
+                <h3>3. Test Yourself</h3>
+                <p>Review the questions, modify them, and use them for self-assessment.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <h2>Contact Us</h2>
+        <p>Have questions or feedback? Reach out to us!</p>
+        <form class="contact-form">
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Your Message" rows="4" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
     <footer>
-        <p>&copy; 2024 QueryCraft. All rights reserved.</p>
+        <p>&copy; 2024 QueryCraft. All rights reserved. | <a href="#privacy">Privacy Policy</a></p>
     </footer>
-
-    <script src="script.js"></script>
 </body>
 </html>
