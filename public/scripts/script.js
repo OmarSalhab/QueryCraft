@@ -53,6 +53,8 @@ document.querySelectorAll(".choice-btn").forEach((button) => {
             fileInput.classList.toggle("hidden");
             
             
+
+            
         }
     });
 });
