@@ -45,6 +45,7 @@ document.querySelectorAll(".choice-btn").forEach((button) => {
         const textInput = document.getElementById("text-input-section");
         const fileInput = document.getElementById("file-input-section");
 
+        
         if (event.target.id === "text-option") {
             fileInput.classList.add("hidden");
             textInput.classList.toggle("hidden");
