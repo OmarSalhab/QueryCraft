@@ -1,146 +1,143 @@
 /* General Reset */
 body {
-    margin: 0;
-    font-family: 'Arial', sans-serif;
-    background: linear-gradient(135deg, #004e92, #000428);
-    color: #ffffff;
+	margin: 0;
+	font-family: "Arial", sans-serif;
+	background: linear-gradient(135deg, #004e92, #000428);
+	color: #ffffff;
 }
-
-
-
 
 /* Header */
 header {
-    text-align: center;
-    padding: 20px 10px;
-    background-color: rgba(0, 50, 100, 0.9);
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
-    position: sticky;
-    top: 0;
-    z-index: 1000;
+	text-align: center;
+	padding: 20px 10px;
+	background-color: rgba(0, 50, 100, 0.9);
+	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+	position: sticky;
+	top: 0;
+	z-index: 1000;
 }
 
 header .logo-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 
 header #logo {
-    width: 50px;
-    height: 50px;
-    margin-right: 10px;
+	width: 50px;
+	height: 50px;
+	margin-right: 10px;
 }
 
 header h1 {
-    font-size: 2.5rem;
-    margin: 0;
+	font-size: 2.5rem;
+	margin: 0;
 }
 
 header p {
-    margin: 10px 0 0;
-    font-size: 1.2rem;
+	margin: 10px 0 0;
+	font-size: 1.2rem;
 }
 
 /* Main Content */
 .content-wrapper {
-    max-width: 800px;
-    margin: 50px auto;
-    padding: 20px;
-    background-color: rgba(255, 255, 255, 0.1);
-    border-radius: 12px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+	max-width: 800px;
+	margin: 50px auto;
+	padding: 20px;
+	background-color: rgba(255, 255, 255, 0.1);
+	border-radius: 12px;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 /* Choice Section */
 .choice-section {
-    text-align: center;
+	text-align: center;
 }
 
 .choice-section h2 {
-    font-size: 1.8rem;
-    margin-bottom: 20px;
+	font-size: 1.8rem;
+	margin-bottom: 20px;
 }
 
 .choice-buttons {
-    display: flex;
-    justify-content: space-around;
-    margin-bottom: 30px;
+	display: flex;
+	justify-content: space-around;
+	margin-bottom: 30px;
 }
 
 .choice-btn {
-    background: #0079ff;
-    border: none;
-    color: white;
-    padding: 10px 20px;
-    font-size: 1rem;
-    cursor: pointer;
-    border-radius: 8px;
-    transition: all 0.3s ease;
+	background: #0079ff;
+	border: none;
+	color: white;
+	padding: 10px 20px;
+	font-size: 1rem;
+	cursor: pointer;
+	border-radius: 8px;
+	transition: all 0.3s ease;
 }
 
 .choice-btn:hover {
-    background: #005fcc;
-    transform: scale(1.1);
+	background: #005fcc;
+	transform: scale(1.1);
 }
 
 /* Input Section */
 .input-section {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 30px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 30px;
 }
 
 .hidden {
-    display: none;
+	display: none;
 }
 
 textarea,
 input[type="file"] {
-    width: 100%;
-    max-width: 600px;
-    padding: 10px;
-    border: none;
-    border-radius: 6px;
-    font-size: 1rem;
-    margin-top: 10px;
+	width: 100%;
+	max-width: 600px;
+	padding: 10px;
+	border: none;
+	border-radius: 6px;
+	font-size: 1rem;
+	margin-top: 10px;
 }
 
 /* Submit Button */
 .submit-section {
-    text-align: center;
-    margin-top: 20px;
+	text-align: center;
+	margin-top: 20px;
 }
 
 .animated-button {
-    background: linear-gradient(135deg, #0079ff, #004e92);
-    color: #ffffff;
-    border: none;
-    padding: 12px 25px;
-    font-size: 1.2rem;
-    border-radius: 50px;
-    cursor: pointer;
-    transition: all 0.3s ease;
+	background: linear-gradient(135deg, #0079ff, #004e92);
+	color: #ffffff;
+	border: none;
+	padding: 12px 25px;
+	font-size: 1.2rem;
+	border-radius: 50px;
+	cursor: pointer;
+	transition: all 0.3s ease;
 }
 
 .animated-button:hover {
-    transform: scale(1.1);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+	transform: scale(1.1);
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
 #loading-img {
-    width: 40px;
-    margin-top: 20px;
+	width: 40px;
+	margin-top: 20px;
 }
 
 /* Footer */
 footer {
-    text-align: center;
-    padding: 20px;
-    background: rgba(0, 50, 100, 0.9);
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    font-size: 0.9rem;
+	text-align: center;
+	padding: 20px;
+	background: rgba(0, 50, 100, 0.9);
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	font-size: 0.9rem;
 }

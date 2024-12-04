@@ -6,8 +6,6 @@ import multer from "multer";
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
-
-
 const app = express();
 const port = 3000;
 
@@ -23,11 +21,9 @@ app.listen(port, () => {
 	console.log(`Server is running at http://localhost:${port}`);
 });
 
-
 app.post("/process-image", upload.single("image"), (req, res) => {
 	const imagePath = req.file.path;
 
-	
 	tesseract
 		.recognize(imagePath, "eng", { logger: (m) => console.log(m) })
 		.then(({ data: { text } }) => {
