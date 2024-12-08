@@ -21,6 +21,7 @@ app.listen(port, () => {
 	console.log(`Server is running at http://localhost:${port}`);
 });
 
+
 app.post("/process-image", upload.single("image"), (req, res) => {
 	const imagePath = req.file.path;
 
