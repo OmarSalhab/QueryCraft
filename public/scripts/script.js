@@ -47,6 +47,7 @@ document.querySelectorAll(".choice-btn").forEach((button) => {
 		if (event.target.id === "text-option") {
 			fileInput.classList.add("hidden");
 			textInput.classList.toggle("hidden");
+			
 		} else if (event.target.id === "image-option") {
 			textInput.classList.add("hidden");
 			fileInput.classList.toggle("hidden");
