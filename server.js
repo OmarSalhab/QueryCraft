@@ -13,6 +13,7 @@ app.use(express.static(path.join(__dirname, "public")));
 
 const upload = multer({ dest: "uploads/" });
 
+
 app.get("/", (req, res) => {
 	res.sendFile(path.join(__dirname, "public/pages/index.html"));
 });
