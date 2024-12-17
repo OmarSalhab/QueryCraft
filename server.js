@@ -24,7 +24,6 @@ app.listen(port, () => {
 
 app.post("/process-image", upload.single("image"), (req, res) => {
 	const imagePath = req.file.path;
-
 	tesseract
 		.recognize(imagePath, "eng", { logger: (m) => console.log(m) })
 		.then(({ data: { text } }) => {
